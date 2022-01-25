@@ -1,0 +1,667 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    line-height: .8;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+/* ------------------------------
+        all common css end 
+-------------------------------- */
+
+/* ------------------------------
+    header style begin
+-------------------------------- */
+#navbar {
+    position: absolute;
+    width: 100%;
+}
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.menu ul{
+    display: flex;
+    gap: 35px;
+}
+.menu ul li a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+}
+.menu ul li a::after{
+    content: '';
+    width: calc(100% - 50px);
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.menu ul li:hover a::after{
+    width: calc(100% - 5px);
+    height: 2px;
+    bottom: -10px;
+    right: 0px;
+    opacity: 1;
+}
+/* ------------------------------
+    header style end
+-------------------------------- */
+
+/* ------------------------------
+    banner style begin
+-------------------------------- */
+#banner {
+    background: url('../images/banner_bg.png') no-repeat;
+    padding-top: 155px;
+}
+.banner_main {
+    display: flex;
+}
+
+.ban_text {
+    width: 75%;
+    color: #fff;
+}
+.ban_img {
+    width: 25%;
+    padding-top: 80px;
+}
+
+.ban_text h3{
+    font-weight: 500;
+    font-size: 36px;
+}
+.ban_text h2{
+    font-weight: 700;
+    font-size: 41px;
+    padding: 15px 0 25px;
+}
+.ban_text p{
+    font-size: 16px;
+    line-height: 24px;
+    padding:0  300px 40px 0;
+}
+.ban_btn a{
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16x;
+    margin-right: 20px;
+    transition: all linear 0.5s;
+}
+.ban_btn a:hover{
+    background: linear-gradient(to right, #0074ff,#00c5ff) no-repeat;
+    border: 1px solid transparent;
+}
+/* ------------------------------
+        banner style end
+-------------------------------- */
+
+/* ------------------------------
+        features style begin
+-------------------------------- */
+.features {
+    padding: 100px 0;
+}
+.sect_head {
+    text-align: center;
+    
+}
+.sect_head h3{
+    padding-bottom: 15px;
+    
+}
+.features_main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.features_inner {
+    width: 33.33%;
+}
+
+.features_item_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.features_text {
+    display: flex;
+}
+
+.item_1 .features_text_item{
+    text-align: right;
+    padding-right: 30px;
+}
+.item_1 .features_text_item h3{
+    font-size: 20px;
+    
+}
+.item_1 .features_text_item p{
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 25px;
+
+}
+
+
+.features_icon {
+    padding-top: 20px;
+
+}
+.features_icon i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 27px;
+    line-height: 70px;
+    text-align: center;
+    transition: all linear 0.3s;
+    
+}
+.features_icon i:hover{
+    background: linear-gradient(#00c4ff, #0074ff);
+    color: #fff;
+}
+
+.item_3 .features_text_item{
+    text-align: left;
+    padding-left: 30px;
+}
+.item_3 .features_text_item h3{
+    font-size: 20px;
+    color: #222222;
+    
+}
+.item_3 .features_text_item p{
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 25px;
+    color: #444444;
+}
+
+/* ------------------------------
+        features style end
+-------------------------------- */
+
+/* ------------------------------
+        screenshot style begin
+-------------------------------- */
+.screenshot_img {
+    text-align: center;
+    padding: 60px 0 100px;
+}
+/* ------------------------------
+        screenshot style end
+-------------------------------- */
+
+/* ------------------------------
+        get app style begin
+-------------------------------- */
+#download_app {
+    margin: 100px 0;
+    background-color: #000000;
+}
+
+.mobile_img {
+    position: absolute;
+    top: -40%;
+    left: 0%; 
+}
+.download {
+    padding: 65px 0;
+    color: #fff;
+    position: relative;
+    
+}
+.download_head h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.btn_text {
+    /* border-radius: 5px; */
+}
+.btn_text h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn_inner {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    gap: 10px;
+    padding:20px 30px;
+    border-radius: 10px;
+    transition: all linear 0.5s;
+}
+.btn_inner:hover {
+    border: 1px solid transparent;
+    background: linear-gradient(to left, #00c4ff, #0074ff) no-repeat;
+    cursor: pointer;
+
+}
+
+.btn_icon i {
+    font-size: 24px;
+}
+/* ------------------------------
+        get app style end
+-------------------------------- */
+
+/* ------------------------------
+        team style end
+-------------------------------- */
+.team {
+    padding:100px 0;
+}
+.team_pic_main {
+    display: flex;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+.team_pic_inner {
+    width: 33.33%;
+}
+.team_img img{
+    width: 100%;
+    
+}
+.team_img {
+    position: relative;
+}
+
+.team_overly {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#49d4fcf2,#499afcf2);
+    width: 100%;
+    height: 30%;
+    transition: all linear 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap:90px;
+    opacity: 0;
+}
+
+.team_pic_inner:hover .team_overly {
+    opacity: 1;
+    height: 100%;
+}
+
+.icon  a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    transition: all linear 0.5s;
+}
+.icon a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 1px solid transparent;
+}
+
+.icon i{
+    transform: rotateX(-360deg);
+    transition: all linear 0.5s;
+}
+.icon a:hover i{
+    transform: rotateX(360deg);
+}
+
+.team_overly .item_2 {
+    margin-bottom: 30px;
+    display: flex;
+    gap:10px;
+}
+.team_text {
+    text-align: center;
+}
+.team_text h3 {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px 0 15px;
+    color: #111111;
+}
+.team_text p{
+    color: #444444;
+}
+/* ------------------------------
+        team style end
+-------------------------------- */
+
+/* ------------------------------
+        video style end
+-------------------------------- */
+.video_main {
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    width: 100%;
+    height: 400px;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ------------------------------
+        video style end
+-------------------------------- */
+
+/* ------------------------------
+    testimonial style begin
+-------------------------------- */
+.testimonial {
+    padding: 100px 0;
+    text-align: center;
+}
+.tmnl_img {
+    position: relative;
+}
+.tmnl_img img{
+    border-radius: 50%;
+    height: 150px;
+}
+.tmnl_img:before {
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translate(-50%);
+    content: '';
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 1px solid #0675ff;
+}
+
+.testimonial_person h3{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 30px 0 10px;
+}
+
+.testimonial_text p{
+    padding: 60px 300px 30px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+/* ------------------------------
+    testimonial style end
+-------------------------------- */
+/* ------------------------------
+    social media style end
+-------------------------------- */
+#social_media {
+    background-color: #020202;
+    padding: 30px 0 30px;
+}
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fff;
+}
+
+.social_item i{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    transition: all linear 0.5s;
+}
+.social_item i:hover {
+    background: linear-gradient(#49d4fc,#499afc);
+    border: 1px solid transparent;
+}
+.social_item h3{
+    padding: 15px 0 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+/* ------------------------------
+    social media style end
+-------------------------------- */
+
+/* ------------------------------
+    pricing style begin
+-------------------------------- */
+#price {
+    padding: 100px 0;
+}
+
+.pricing_detail {
+    padding-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.pricing_item {
+    width: 33.33%;
+    text-align: center;
+    position: relative;
+}
+.pricing_item:hover {
+    box-shadow: 0 10px 20px 5px #0003,
+                0 5px 5px 5px #0001;
+}
+
+.free  {
+    background-color: #111111;
+    height: 125px;
+}
+.free h3 {
+    color: #fff;
+    line-height: 80px;
+}
+
+.pricing_item:hover .free{
+    background: linear-gradient(to left,#49d4fc,#499afc) no-repeat;
+}
+
+.price_tag {
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.price_tag h3{
+    line-height: 100px;
+    font-size: 36px;
+}
+
+.product_detail {
+    background-color: #f1f1f1;
+    padding: 50px 0 30px;
+}
+.product_detail h3{
+    font-weight: 400;
+    font-size: 14px;
+}
+.product_item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 25px;
+}
+
+.purc_btn a{
+    padding: 15px 20px;
+    border: 1px solid #dddddd;
+    color: #000;
+}
+
+.pricing_item:hover .purc_btn a{
+    background: linear-gradient(to left,#49d4fc,#499afc) no-repeat;
+    border: 1px solid transparent;
+    
+}
+
+/* ------------------------------
+    pricing style end
+-------------------------------- */
+
+/* ------------------------------
+    subs style begin
+-------------------------------- */
+.subs  {
+    text-align: center;
+}
+
+.subs_head  {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+.newsletter input {
+    padding: 15px 90px 15px 10px;
+    border: 1px solid #000c;
+    outline: 0;
+}
+.newsletter input[placeholder] {
+    font-style: italic;
+}
+.newsletter a{
+    background: linear-gradient(to left,#49d4fc,#499afc) no-repeat;
+    padding: 15px 20px;
+}
+
+.follow_us {
+    padding: 30px 0 30px;
+}
+
+.follow_us a{
+    color: #000;
+}
+
+.follow_us a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    transition: all linear 0.5s;
+    margin-left: 10px;
+}
+.follow_us a:hover {
+    border-radius: 1px solid transparent;
+    background: linear-gradient(to left,#49d4fc,#499afc) no-repeat;
+    color: #fff;
+}
+
+.follow_us i{
+    transform: rotateX(-360deg);
+    transition: all linear 0.5s;
+}
+.follow_us a:hover i{
+    transform: rotateX(360deg);
+}
+/* ------------------------------
+    subs style end
+-------------------------------- */
+
+/* ------------------------------
+    footer style begin
+-------------------------------- */
+#footer {
+    background-color: #434343;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+.footer_inner p{
+    color: #fff;
+}
+.footer_inner a{
+    color: #0073ff;
+}
+
+.follow_us h3 {
+    padding: 25px 0;
+}
+/* ------------------------------
+    footer style end
+-------------------------------- */
